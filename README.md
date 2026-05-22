@@ -254,8 +254,11 @@ Frontend SDK (inferenceLogger.js)
 
 Create a `.env` file in the root of the project:
 ```env
-GEMINI_API_KEY=AIzaSyCJpkW9HCHp6hLNukK2RwqrjFfVGDKlOOU
-MONGODB_URI=mongodb+srv://swathi:swathi1029@ollive.rsulk3z.mongodb.net/?appName=ollive
+GEMINI_API_KEY=your_gemini_api_key
+OPENAI_API_KEY=your_openai_api_key
+ANTHROPIC_API_KEY=your_anthropic_api_key
+
+MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/ollive
 PORT=4000
 FRONTEND_URL=http://localhost:5173
 NODE_ENV=development
