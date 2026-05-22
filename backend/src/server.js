@@ -23,6 +23,7 @@ app.use(
     origin: [
       process.env.FRONTEND_URL || "http://localhost:5173",
       "http://localhost:4173", // vite preview
+      "https://ollive-inference-studio-git-main-swathi-r29s-projects.vercel.app",
     ],
     credentials: true,
     // Expose SSE headers to the browser

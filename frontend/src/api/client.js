@@ -2,7 +2,12 @@
 // Centralised API client for all backend calls.
 // API key is NEVER touched here — it lives only in the backend .env
 
-const BASE = import.meta.env.VITE_API_URL || "/api"; // Vite proxy handles this in dev; nginx in prod; VITE_API_URL in cloud deployments (e.g. Vercel)
+const getApiUrl = () => {
+  const url = import.meta.env.VITE_API_URL;
+  if (!url) return "/api";
+  return url.endsWith("/api") ? url : `${url}/api`;
+};
+const BASE = getApiUrl();
 
 // ─── Conversations ────────────────────────────────────────────────────────────
 
