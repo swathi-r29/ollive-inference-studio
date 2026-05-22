@@ -1,0 +1,18 @@
+# Environment files
+.env
+backend/.env
+frontend/.env
+.env.local
+.env.*.local
+
+# Dependency directories
+node_modules/
+node_modules
+
+# Build outputs and cache
+dist/
+dist
+*.log
+.DS_Store
+.idea/
+.vscode/
