@@ -39,6 +39,40 @@ A full-stack LLM chatbot with real-time inference logging, ingestion pipeline, a
                                                        └───────────────────────┘
 ```
 
+---
+
+## UI & Observability Gallery
+
+### 💬 Chat Interface & Multi-Provider Support
+Exposes a responsive interface allowing users to start, list, resume, and cancel multi-turn conversations across OpenAI, Anthropic, and Gemini models.
+![Chatbot UI](./screenshots/chatUI.png)
+
+---
+
+### 🔌 Multi-Provider Support
+Supports streaming responses from multiple LLM models (Claude, Gemini, GPT) with unified backend adapters.
+![Multi-Provider Support](./screenshots/providers.png)
+
+---
+
+### 📊 Real-Time Telemetry Dashboard
+An observability panel aggregating end-to-end latency metrics, token throughput spikes, error rates, and model usage distributions.
+![Metrics Dashboard](./screenshots/dashboard.png)
+
+---
+
+### 🔍 Ingestion Logs & Async PII Redaction
+Audit-ready logs exhibiting rich SDK metadata parameters and real-time server-side PII scrubbing.
+![Inference Logs](./screenshots/Logs.png)
+
+---
+
+### 🐳 Containerized Hybrid Stack (Docker Compose)
+Launch the unified stack (frontend, backend, Redis queue broker) with a single execution step.
+![Docker Stack](./screenshots/docker.png)
+
+---
+
 ### Key Design Decisions
 
 * **Multi-Provider Unified Streaming & SSE**: Backend adapters unify streaming interfaces across Google (Gemini), Anthropic (Claude), and OpenAI (GPT), abstracting differences in token counting and system instructions. Server-Sent Events (SSE) deliver real-time token streaming with sub-100ms perceived time-to-first-token.
