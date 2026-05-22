@@ -2,6 +2,11 @@
 
 A full-stack LLM chatbot with real-time inference logging, ingestion pipeline, and observability dashboard.
 
+## Live Demo
+
+* **Frontend**: https://ollive-inference-studio-git-main-swathi-r29s-projects.vercel.app
+* **Backend**: https://ollive-backend-opdo.onrender.com
+
 ---
 
 ### Architecture Overview
